@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame" clip-path="url(#clip0_80_571)">
+<g id="Group">
+<path id="Vector" d="M24.0269 40.9308H29.806M24.0269 48.0569H29.806M20.8403 37.8754V31.9424M20.8403 56.677V50.744M13.5043 37.8754H24.0269V50.744H13.5043V37.8754Z" stroke="#BFA470" stroke-width="4" stroke-miterlimit="10"/>
+<path id="Vector_2" d="M50.506 17.8019V62.125H13.494V17.8019" stroke="#BFA470" stroke-width="4" stroke-miterlimit="10"/>
+<path id="Vector_3" d="M13.494 55.0854L3.51477 51.728V17.6596C3.51477 12.559 6.69365 7.99888 11.4794 6.23438L23.3035 1.875H40.6965L52.5205 6.23438C57.3063 7.99888 60.4851 12.559 60.4851 17.6596V51.7279L50.5059 55.0853" stroke="#BFA470" stroke-width="4" stroke-miterlimit="10"/>
+<path id="Vector_4" d="M25.0239 1.875V3.02575C25.0239 4.51519 25.3553 5.98597 25.994 7.33151C26.6327 8.67704 27.5628 9.86362 28.7168 10.8053L31.8168 13.3348M31.8168 13.3348L34.9168 10.8053C36.0708 9.86361 37.0009 8.67702 37.6396 7.33149C38.2783 5.98596 38.6097 4.51518 38.6097 3.02575V1.875M31.8168 13.3348L31.8167 23.0534" stroke="#BFA470" stroke-width="4" stroke-miterlimit="10"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_80_571">
+<rect width="64" height="64" fill="white"/>
+</clipPath>
+</defs>
+</svg>

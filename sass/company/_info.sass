@@ -1,0 +1,71 @@
+@import '../cta/_cta'
+.info
+    margin-top: 10rem
+    .info__content
+        .info__title
+            font-size: 2.6rem
+            line-height: 133.3%
+            font-weight: 700
+            
+            max-width: 86rem
+
+            margin-bottom: 4rem
+        .info__grid
+            display: grid
+            grid-template-columns: repeat(4, 26rem)
+            gap: 4rem
+            .grid-card
+                @include flex-column-center()
+
+                text-align: center
+
+                border-radius: 1.6rem
+
+                transition: $transition
+
+                padding: 4.3rem 2rem 5.5rem 2rem
+                &:hover
+                    transform: translateY(-1rem)
+
+                    background-color: $clr-primary-7
+                &:active
+                    position: relative
+                    top: $active
+                h2
+                    margin-top: 3rem
+
+                    font-size: 1.4rem
+                    font-weight: 700
+                    letter-spacing: 1.12px
+                p
+                    color: $clr-grey-5
+                    font-size: 1.4rem
+                    line-height: 151.1%
+                    letter-spacing: 0.28px
+
+                    margin-top: 1.9rem
+@media screen and ( max-width: 1024px )
+    .info
+        .info__content
+            .info__title
+                font-size: 2.4rem
+            .info__grid
+                grid-template-columns: repeat(3, 26rem)
+@media screen and ( max-width: 768px )
+    .info
+        .info__content
+            .info__title
+                font-size: 2.2rem
+            .info__grid
+                grid-template-columns: repeat(2, 26rem)
+                
+                margin-left: 6rem
+@media screen and ( max-width: 425px )
+    .info
+        .info__content
+            .info__title
+                font-size: 2rem
+            .info__grid
+                grid-template-columns: 1fr
+
+                margin-left: 0

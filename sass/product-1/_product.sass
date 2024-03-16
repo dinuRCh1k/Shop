@@ -1,0 +1,459 @@
+@import '../cta/_cta'
+.product
+    margin-top: 10rem
+    .product__title
+        font-size: 2rem
+        color: $clr-black
+    .product__nav
+        ul
+            display: flex
+            align-items: center
+            column-gap: 2rem
+            li
+                a
+                    font-size: $size
+                    color: $clr-grey-4
+            .product__nav-last
+                pointer-events: none
+            .product__nav-line
+                font-size: $size
+                color: $clr-grey-4
+    .product__content
+        margin-top: 4rem
+        .product__wrapper
+            display: grid
+            grid-template-columns: 1fr 1fr
+            height: 200rem
+            .product__left
+                p
+                    font-size: 2rem
+                    color: $clr-grey-3
+                    span
+                        color: $clr-header
+                .product__title
+                    margin-bottom: 2rem
+                .product__flex
+                    display: flex
+                    .product__img
+                        position: relative
+
+                        margin-right: 5rem
+
+                        width: 35rem
+                        img
+                            max-width: 30.4rem
+                            height: 30.4rem
+
+                            margin-top: 5rem
+                            margin-left: 2rem
+                        .product__img-block
+                            display: inline-block
+                            border: 0.1rem solid $clr-grey-9
+                            border-radius: $radius
+
+                            padding: 0.2rem
+
+                            position: absolute
+                            top: 0
+                            right: 0
+                            a
+                                font-size: $size
+                                color: $clr-black
+                                i
+                                    font-size: 1.7rem
+                                    color: $clr-primary-5
+                                span
+                                    color: $clr-grey-3
+                    .product__text
+                        .product__top
+                            h2
+                                font-size: 2rem
+                            .product__top-flex
+                                display: flex
+                                column-gap: 2rem
+
+                                margin: $margin 0
+                                p
+                                    font-size: $size
+                                    color: $clr-grey-4
+                                    font-weight: bold
+
+                                    padding: 0.4rem 1.6rem
+
+                                    cursor: not-allowed
+                                    &::selection
+                                        color: $clr-grey-4
+                                    &:last-child
+                                        border: 0.1rem solid $clr-header
+                                        border-radius: 3.2rem
+
+                                        cursor: pointer
+                            .product__top-flex-2
+                                margin-top: $margin
+                                .one
+                                    margin-bottom: $margin
+                                    p
+                                        font-size: $size
+                                        color: $clr-grey-3
+                                        font-weight: bold
+                                    span
+                                        color: $clr-grey-5
+                                .two
+                                    p
+                                        font-size: $size
+                                        color: $clr-grey-3
+                                        font-weight: bold
+                                    span
+                                        color: $clr-grey-5
+                                a
+                                    font-size: $size
+                                    color: $clr-header
+
+                                    margin-left: 5rem
+                                    transition: $transition
+                                    &:hover
+                                        text-decoration: underline
+                                    &:active
+                                        position: relative
+                                        top: $active
+                //product__left-top
+                .product__left-top
+                    margin-top: 10rem
+                    .product__left-1
+                        margin-bottom: 5rem
+                        .product__title
+                            margin-bottom: 0
+                        .product__text
+                            display: flex
+                            align-items: center
+                            column-gap: 10rem
+
+                            margin-top: 3rem
+                            h2
+                                font-size: 2rem
+                                color: $clr-grey-3
+                                line-height: 2rem
+
+                                max-width: 20rem
+                        .product__top
+                        .product__top-flex-2
+                            margin-top: $margin
+                            .one,.three
+                                margin-bottom: $margin
+                                p
+                                    font-size: $size
+                                    color: $clr-grey-3
+                                    font-weight: bold
+                                    span
+                                        color: $clr-grey-5
+                            .two
+                                p
+                                    font-size: $size
+                                    color: $clr-grey-3
+                                    font-weight: bold
+                                    span
+                                        color: $clr-grey-5
+                    .product__left-2
+                        .product__stars
+                            margin-bottom: 3rem
+                            i
+                                font-size: 2rem
+                                color: $clr-primary-5
+                            p
+                                display: inline-block
+                                font-size: 1.8rem
+                                font-weight: 500
+
+                                color: $clr-black
+
+                                margin-left: 0.5rem
+                                span
+                                    color: $clr-grey-3
+                        .product__reviews
+                            .review
+                                margin-bottom: 4rem
+                                .review-title
+                                    font-size: 2rem
+                                    color: $clr-black
+                                .review-stars
+                                    i
+                                        color: $clr-primary-5
+                                        font-size: $size
+                                        margin: $margin 0
+                                p
+                                    color: $clr-black
+                                    font-size: $size
+                                h2
+                                    color: $clr-grey-5
+                                    font-size: $size
+                                    margin: $margin 0
+                                    span
+                                        color: $clr-black
+                    .product__left-3
+                        .product__self
+                            .self-title
+                                font-size: $size
+                                font-weight: 600
+
+                                @include flex-row-center()
+                                .right
+                                    margin-left: $margin
+                                    color: #2196f3
+                                    @include flex-row-center()
+                                    i
+                                        font-size: 2rem
+                                        margin-right: 0.5rem
+                            ul
+                                
+                                @include flex-row-center-space-between()
+                                border-bottom: 0.1rem solid $clr-grey-5
+
+                                padding-top: $margin
+                                padding-block: $margin
+                                padding-left: 3rem
+                                li
+                                    color: $clr-grey-5
+                                    font-size: $size
+                            .self-block
+                                border-bottom: 0.1rem solid $clr-grey-5
+
+                                ul
+                                    border-bottom: none
+                                    li
+                                        color: $clr-black
+                                        &:first-child
+                                            font-size: $size
+                                            font-weight: 500
+                                            line-height: 2rem
+
+                                            max-width: 20rem
+                                        &:nth-child(2)
+                                            position: relative
+                                            right: 10rem
+                                        &:nth-child(3)
+                                            position: relative
+                                            right: 4.5rem
+                                        &:last-child
+                                            color: $clr-header
+            //product__right
+            .product__right
+                margin-left: 7rem
+
+                @include flex-column()
+                align-items: flex-start
+
+                position: sticky
+                top: 8rem
+                .product__title
+                    display: flex
+                    align-items: center
+                    column-gap: 10rem
+
+                    margin-bottom: $margin
+                    h2
+                        font-size: $size
+                    .product__title-right
+                        @include flex-row-center()
+                        i
+                            color: #6c9b01
+                            font-size: 2rem
+                        p
+                            font-size: $size
+                            margin-left: 0.5rem
+                .product__subticle
+                    font-size: 2.6rem
+                    font-weight: bold
+
+                    display: flex
+                    align-items: flex-start
+                    span
+                        font-size: 2rem
+                        color: $clr-grey-3
+                        font-weight: 600
+                        text-decoration-line: line-through
+
+                        margin-left: 0.5rem
+                .product__bonus
+                    color: $clr-grey-3
+                    font-size: $size
+
+                    margin: 0 0 2rem 0
+                    span
+                        color: $clr-header
+                .product__text
+                    margin-top: 4rem
+
+                    @include flex-column()
+                    row-gap: 2rem
+                    .product__text-top,.product__text-bottom
+                        color: $clr-black
+                        font-size: $size
+
+                        @include flex-row-center()
+                        column-gap: 0.5rem
+                        i
+                            color: $clr-primary-5
+                            font-size: 2rem
+                        span
+                            color: $clr-header
+@media screen and ( max-width: 1024px )
+    .product
+        .product__title
+            font-size: 1.8rem
+            font-weight: 600
+        .product__content
+            .product__wrapper
+                grid-template-columns: 1fr
+                .product__left
+                    .product__right-population
+                        display: block
+                        .product__right
+                            display: block
+                            margin-left: 0
+                            margin-top: 5rem
+                    .product__flex
+                        .product__img
+                            img
+                                width: 19.9rem
+                                height: 19.9rem
+                .product__right
+                    display: none
+@media screen and ( max-width: 768px )
+    .product
+        .product__content
+            .product__wrapper
+                grid-auto-columns: 1fr
+                .product__left
+                    .product__right-population
+                        .product__right
+                            margin-top: 0
+                            position: relative
+                            .product__subticle
+                                display: none
+                            .product__bonus
+                                display: none
+                            .but
+                                position: relative
+                                top: 1rem
+                    .see
+                        display: none
+                    .none
+                        display: block
+                    .product__subticle
+                        font-size: 2.6rem
+                        font-weight: bold
+
+                        display: flex
+                        align-items: flex-start
+                        span
+                            font-size: 2rem
+                            color: $clr-grey-3
+                            font-weight: 600
+                            text-decoration-line: line-through
+
+                            margin-left: 0.5rem
+                    .product__flex
+                        .product__img
+                            width: 19.9rem
+                    .product__bonus
+                        color: $clr-grey-3
+                        font-size: $size
+
+                        margin: 0 0 2rem 0
+                        span
+                            color: $clr-header
+                .product__left-top
+                    .product__left-1
+                        position: relative
+                        top: 5rem
+@media screen and ( max-width: 425px )
+    .product
+        margin-top: 5rem
+        .product__nav
+            ul
+                overflow: hidden
+                li
+                    font-size: 1rem
+                    white-space: nowrap
+        .product__content
+            .product__wrapper
+                @include flex-column()
+                .product__left
+                    @include flex-column()
+                    .product__flex
+                        @include flex-column()
+                        flex-wrap: wrap
+                        .product__img
+                            width: 100%
+                            margin-left: auto
+                            margin-right: auto
+                            img
+                                position: relative
+                                left: 3rem
+                        .product__img-block
+                            right: 3rem
+                        .product__text
+                            .product__top
+                                .product__top-flex
+                                    flex-wrap: wrap
+                                    gap: 2rem
+                                .product__top-flex-2
+                                    display: none
+                                .none
+                                    p
+                                        font-size: $size
+
+                                        border-bottom: 0.1rem solid $clr-grey-5
+
+                                        @include flex-row-center-space-between()
+
+                                        margin-bottom: 1rem
+                                    a
+                                        font-size: $size
+                                        color: $clr-header
+
+                                        margin-left: 5rem
+                                        transition: $transition
+                                        &:hover
+                                            text-decoration: underline
+                                        &:active
+                                            position: relative
+                                            top: $active
+                    .product__left-top
+                        .product__left-1
+                            .product__flex
+                                display: none
+                            .none
+                                h2
+                                    font-size: 2rem
+                                    font-weight: 600
+
+                                    margin-bottom: $size
+                                    margin-top: 2rem
+                                p
+                                    font-size: $size
+
+                                    @include flex-row-center-space-between()
+
+                                    border-bottom: 0.1rem solid $clr-grey-5
+
+                                    margin-bottom: 1rem
+                        .product__left-2
+                            margin-top: 8rem
+                        .product__left-3
+                            display: none
+                .product__right
+                    .product__title
+                        .product__title-right
+                            p
+                                font-size: 1.2rem
+@media screen and ( max-width: 320px )
+    .product
+        .product__content
+            .product__wrapper
+                .product__left
+                    .product__flex
+                        .product__img
+                            img
+                                position: relative
+                                right: 5rem

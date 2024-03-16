@@ -1,0 +1,60 @@
+@import '../cta/_cta'
+.hero
+    margin-top: 13.6rem
+    .hero__content
+        @include flex-column-center()
+        .hero__grid
+            display: grid
+            grid-template-columns: repeat(4, 33.5rem)
+            grid-gap: 3rem
+
+            margin-top: 5.8rem
+            .hero__card
+                @include flex-column-center()
+                transition: $transition
+
+                text-align: center
+                &:hover
+                    transform: translateY(-1rem)
+                img
+                    object-fit: cover
+                    height: 33.5rem
+                    width: 100%
+                h2
+                    font-size: 1.4rem
+                    font-weight: 500
+                    line-height: 2rem
+                    letter-spacing: 0.2rem
+
+                    margin-bottom: 0.7rem
+                    margin-top: 2.3rem
+                p
+                    color: $clr-primary-5
+                    font-size: 1.4rem
+                    line-height: 2rem
+
+                    display: flex
+                    gap: 2.1rem
+                    span
+                        color: $clr-grey-3
+                        text-decoration-line: line-through
+        .button
+            margin-top: 6rem
+//media
+@media (max-width: 1024px)
+    .hero
+        .hero__content
+            .hero__grid
+                grid-template-columns: repeat(2, 40rem)
+@media screen and ( max-width: 768px )
+    .hero
+        .hero__content
+            .hero__grid
+                grid-template-columns: 1fr
+@media screen and ( max-width: 425px )
+    .hero
+        .hero__content
+            .hero__title
+                text-align: center
+            .hero__grid
+                grid-template-columns: 1fr

@@ -1,0 +1,118 @@
+@import '../cta/_cta'
+.header
+    .container
+        .header__top
+            .nav
+                @include flex-row-center-space-between()
+                margin-top: 2.8rem
+                margin-bottom: 2.8rem
+                .nav-list
+                    @include flex-row-center()
+                    column-gap: 2rem
+                    li
+                        a
+                            font-size: 1.8rem
+                            color: $clr-grey-1
+                            line-height: 2.4rem
+                            font-weight: 700
+                            font-family: $ff-secondary
+                            transition: $transition
+                            &:hover
+                                color: $clr-primary-4
+                .nav-last
+                    a
+                        i
+                            font-size: 2rem
+                            color: $clr-grey-1
+                            position: relative
+                            transition: $transition
+                            &::after
+                                content: '0'
+                                position: absolute
+                                background-color: $clr-primary-5
+                                font-size: 1rem
+                                padding: 0.3rem 0.4rem
+                                border-radius: 100%
+                                top: -0.5rem
+                                right: -1rem
+                            &:hover
+                                transform: translateY(-0.5rem)
+                                box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.5)
+//burger
+@keyframes burgerAnimation
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+.burger
+    display: none
+    align-items: center
+    justify-content: flex-end
+    width: 3rem
+    height: 1.8rem
+    position: relative
+    z-index: 99
+    span
+        display: inline-block
+        height: 0.2rem
+        width: 100%
+        transform: scale(1)
+        background-color: $clr-black
+.burger::before, .burger::after
+    content: ''
+    position: absolute
+    height: 0.2rem
+    width: 100%
+    background-color: $clr-black
+    transition: all .3s ease 0s
+.burger::before
+    top: 0
+.burger::after
+    bottom: 0
+    left: 0
+.burger.active span
+    transform: scale(0)
+.burger.active::before
+    top: 50%
+    transform: rotate(-45deg) translate(0, -50%)
+.burger.active::after
+    bottom: 50%
+    transform: rotate(45deg) translate(0, 50%)
+.open
+    display: block !important
+@media screen and ( max-width: 768px )
+    .header
+        .container
+            .header__top
+                .nav
+                    .nav-list
+                        display: none
+                        flex-direction: column
+                        position: fixed
+                        width: 100%
+                        height: 100%
+                        top: 0
+                        bottom: 0
+                        left: 0
+                        right: 0
+                        z-index: 50
+                        padding: 5rem 4rem
+                        background-color: $clr-grey-10
+                        animation: burgerAnimation .4s
+                        .footer-li
+                            display: none
+                        .none
+                            display: inline
+                    .nav-last
+                        display: none
+                    .burger
+                        display: block
+            .header__row
+                height: 38rem
+                .header__content
+                    .header__right
+                        .header__title
+                            font-size: 2rem
+                        .header__subticle
+                            font-size: 3.5rem
+                            line-height: normal

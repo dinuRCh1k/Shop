@@ -1,0 +1,107 @@
+@import '../cta/_cta'
+.footer
+    margin-top: 14rem
+
+    background-color: $clr-grey-9
+
+    height: 25rem
+    .container
+        .footer__content
+            @include flex-row-center-space-between()
+
+            padding-top: 2.3rem
+            padding-bottom: 4.3rem
+            .footer__first
+                .footer__logo
+                    margin-bottom: 3.5rem
+                h2
+                    font-size: 2rem
+                    line-height: 2rem
+                    font-weight: 500
+                    margin-bottom: 0.8rem
+                p
+                    color: $clr-footer
+                    font-size: 1.8rem
+                    font-weight: 500
+            .footer__list
+                display: flex
+                column-gap: 6rem
+                .footer__element
+                    h2
+                        font-size: 2rem
+                        font-weight: 500
+
+                        margin-bottom: 0.6rem
+                    ul
+                        li
+                            margin-bottom: 0.6rem
+                            a
+                                color: $clr-footer
+                                font-size: 1.8rem
+                                font-weight: 500
+                                transition: $transition
+                                &:hover
+                                    color: $clr-primary-4
+            .footer__last
+                .last-top
+                    display: flex
+                    column-gap: 3rem
+                    a
+                        i
+                            color: $clr-black
+                            font-size: 2rem
+                            transition: $transition
+                            &:hover
+                                color: $clr-primary-4
+                .last-bottom
+                    margin-top: 1rem
+                    p
+                        color: $clr-footer
+                        font-size: 1.5rem
+                        font-weight: 500
+                        line-height: 120%
+
+                        margin-bottom: 0.6rem
+//media
+@media screen and ( max-width: 1024px )
+    .footer
+        margin-top: 35rem
+@media screen and ( max-width: 768px )
+    .footer
+        height: 35rem
+        .container
+            .footer__content
+                flex-direction: column
+                .footer__list
+                    .footer__element
+                        h2
+                            font-size: 1.5rem
+                        ul
+                            li
+                                a
+                                    font-size: 1.4rem
+                .footer__last   
+                    .last-bottom
+                        text-align: center
+                        p
+                            font-size: 1.3rem
+@media screen and ( max-width: 360px )
+    .footer
+        height: 57rem
+        .container
+            .footer__content
+                @include flex-column-center()
+                padding-bottom: 0
+                .footer__list
+                    display: flex
+                    flex-direction: column
+                    text-align: center
+                    .footer__element
+                        ul
+                            li
+                                a
+                                    font-size: 1.5rem
+                .footer__last
+                    padding-top: 2rem
+                    .last-bottom
+                        text-align: center

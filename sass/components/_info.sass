@@ -1,0 +1,78 @@
+@import '../cta/_cta'
+.info
+    margin-top: 13.9rem
+    .info__content
+        .info__wrapper
+            display: flex
+            column-gap: 16.9rem
+            .info__left
+                padding: 13.9rem 0 13.9rem 0
+                .info__title
+                    margin-bottom: 1.7rem
+
+                    font-size: 5rem
+                    text-transform: uppercase
+                    color: $clr-black
+                    line-height: 7.2rem
+                    letter-spacing: 0.3rem
+                    font-weight: 600
+                    
+                    max-width: 53.5rem
+                p
+                    font-size: 1.6rem
+                    font-weight: 500
+                    line-height: 2.5rem
+                    color: $clr-grey-1
+
+                    max-width: 50rem
+                    margin-bottom: 1.2rem
+                .button
+                    position: relative
+                    top: 5rem
+            .info__right
+                @include flex-row-center()
+                gap: 3rem
+                img
+                    width: 25rem
+                    height: 67rem
+                    object-fit: cover
+                .info__column
+                    @include flex-column()
+                    gap: 3rem
+                    img
+                        width: 43.2rem
+                        height: 32.9rem
+                        object-fit: cover
+@media (max-width: 1024px)
+    .info
+        margin-top: 8rem
+        .info__content
+            .info__wrapper
+                .info__left
+                    .info__title
+                        font-size: 3.5rem
+                        letter-spacing: normal
+                        line-height: normal
+                .info__right
+                    .info__column
+                        img
+                            width: 34rem
+                            height: 21rem
+                            display: block
+                    img
+                        display: none
+@media screen and ( max-width: 768px )
+    .info
+        .info__content
+            .info__wrapper
+                .info__right
+                    display: none
+@media screen and ( max-width: 425px )
+    .info
+        .info__content
+            .info__wrapper
+                .info__left
+                    .info__title
+                        font-size: $fz-mobile
+                .info__right
+                    display: none

@@ -1,0 +1,102 @@
+@import '../cta/_cta'
+.deal
+    margin-top: 9.5rem
+    @include flex-column-center()
+    .deal__text
+        @include flex-column-center()
+        .underline
+            margin-bottom: 2.5rem
+        .deal__subticle
+            max-width: 75.9rem
+
+            color: $clr-grey-1
+            font-size: 1.8rem
+            font-weight: 500
+            font-family: $ff-three
+            line-height: 2.4rem
+
+            text-align: center
+
+            margin-bottom: 3.7rem
+    .deal__grid-1
+        display: grid
+        grid-template-columns: 22rem 31.2rem 31.2rem 31.2rem
+        grid-gap: 3rem
+        .grid-card
+            transition: $transition
+            &:hover
+                transform: translateY(-1rem)
+            img
+                border-radius: $radius
+
+                height: 31.1rem
+
+                object-fit: cover
+            h3
+                margin-top: 2rem
+
+                font-size: 1.8rem
+                font-weight: 500
+                line-height: 2.4rem
+    .deal__grid-2
+        display: grid
+        grid-template-columns: 28rem 28rem 28rem
+        grid-gap: 19.1rem
+        margin-top: 13.8rem
+
+        text-align: center
+        .grid-card
+            @include flex-column-center()
+            transition: $transition
+            &:hover
+                background-color: $clr-primary-6
+                border-radius: 2rem
+
+                transform: translateY(-1rem) scale(1.01)
+            img
+                margin-bottom: 2.2rem
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    background-image: url("../img/icons/Ellipse 2.svg")
+                    width: 4.5rem
+                    height: 4.5rem
+                    right: 0
+            h3
+                font-size: 2.4rem
+                font-weight: 600
+                line-height: 3.2rem
+
+                color: $clr-black
+            p
+                max-width: 28.4rem
+
+                font-size: 1.6rem
+                line-height: 2rem
+                color: $clr-grey-1
+                text-align: center
+
+                margin-top: 1.1rem
+@media (max-width: 1024px)
+    .deal
+        .deal__grid-1
+            grid-template-columns: 28rem 28rem
+        .deal__grid-2
+            display: flex
+            flex-wrap: wrap
+            .grid-card
+                &:last-child
+                    margin-left: auto
+                    margin-right: auto
+@media screen and ( max-width: 768px )
+    .deal
+        .deal__grid-2
+            .grid-card
+                margin-left: auto
+                margin-right: auto
+@media screen and ( max-width: 425px )
+    .deal
+        .deal__grid-1
+            grid-template-columns: 1fr
+            text-align: center

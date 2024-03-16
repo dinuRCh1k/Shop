@@ -1,0 +1,109 @@
+@import '../cta/_cta'
+.hero
+    margin-top: 10rem
+    .hero__subticle
+        font-size: 2.6rem
+        font-weight: 600
+        line-height: 4.2rem
+        color: $clr-primary-3
+
+        margin-top: 3rem
+    .hero__text
+        font-family: $ff-three
+        color: $clr-grey-5
+        font-size: 1.6rem
+        line-height: 2.9rem
+        max-width: 51.2rem
+
+        margin-bottom: 3.8rem
+    .hero__subtitle
+        font-size: 5.6rem
+        color: $clr-black
+        font-weight: 700
+        line-height: 7.2rem
+        font-family: $ff-three
+    .hero__content
+        .hero__wrapper
+            display: grid
+            grid-template-columns: 1fr 1fr
+
+            align-items: center
+            .hero__left
+                margin-top: 2rem
+        .hero__grid
+            display: grid
+            grid-template-columns: 28rem 28rem 28rem
+            grid-gap: 19.1rem
+            margin-top: 13.8rem
+
+            text-align: center
+            .grid-card
+                @include flex-column-center()
+                transition: $transition
+                &:hover
+                    background-color: $clr-primary-6
+                    border-radius: 2rem
+
+                    transform: translateY(-1rem) scale(1.01)
+                img
+                    margin-bottom: 2.2rem
+                    position: relative
+                    &::before
+                        content: ''
+                        position: absolute
+                        background-image: url("../img/icons/Ellipse 2.svg")
+                        width: 4.5rem
+                        height: 4.5rem
+                        right: 0
+                h3
+                    font-size: 2.4rem
+                    font-weight: 600
+                    line-height: 3.2rem
+
+                    color: $clr-black
+                p
+                    max-width: 28.4rem
+
+                    font-size: 1.6rem
+                    line-height: 2rem
+                    color: $clr-grey-1
+                    text-align: center
+
+                    margin-top: 1.1rem
+@media screen and ( max-width: 1024px )
+    .hero
+        .hero__content
+            .hero__wrapper
+                .hero__left
+                    img
+                        width: 45rem
+            .hero__grid
+                display: flex
+                flex-wrap: wrap
+                .grid-card
+                    &:last-child
+                        margin-left: auto
+                        margin-right: auto
+@media screen and ( max-width: 768px )
+.hero
+    .hero__content
+        .hero__wrapper
+            .hero__right
+                margin-left: 2rem
+                .hero__subtitle
+                    font-size: 3.5rem
+                .hero__text
+                    font-size: $size
+                    line-height: normal
+        .hero__grid
+            .grid-card
+                margin-left: auto
+                margin-right: auto
+@media screen and ( max-width: 425px )
+    .hero
+        .hero__content
+            .hero__wrapper
+                grid-template-columns: 1fr
+                .hero__right
+                    .hero__subtitle
+                        line-height: normal

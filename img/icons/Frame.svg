@@ -1,0 +1,42 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame" clip-path="url(#clip0_80_548)">
+<g id="Group">
+<g id="Clip path group">
+<mask id="mask0_80_548" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+<g id="a">
+<path id="Vector" d="M61.9998 62V2.00019H2V62H61.9998Z" fill="white" stroke="white" stroke-width="4"/>
+</g>
+</mask>
+<g mask="url(#mask0_80_548)">
+<g id="Group_2">
+<path id="Vector_2" d="M62.0623 62.125H1.9375V15.5081L31.9374 1.87518L62.0623 15.5081V62.125Z" stroke="#BFA470" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M12.5625 62.125V24.6251H51.3124V62.125" stroke="#BFA470" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M12.5625 47.125H27.5624V62.125" stroke="#BFA470" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<path id="Vector_5" d="M20.0625 47.125V50.875" stroke="#BFA470" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Clip path group_2">
+<mask id="mask1_80_548" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+<g id="b">
+<path id="Vector_6" d="M61.9998 62V2.00019H2V62H61.9998Z" fill="white" stroke="white" stroke-width="4"/>
+</g>
+</mask>
+<g mask="url(#mask1_80_548)">
+<g id="Group_3">
+<path id="Vector_7" d="M36.3124 62.125V47.125H51.3123" stroke="#BFA470" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<path id="Vector_8" d="M43.8124 47.125V50.875" stroke="#BFA470" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_9" d="M12.5625 32.125H27.5625V47.125" stroke="#BFA470" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_10" d="M20.0625 32.125V35.875" stroke="#BFA470" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_11" d="M26.3125 14.625H37.5625" stroke="#BFA470" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_80_548">
+<rect width="64" height="64" fill="white"/>
+</clipPath>
+</defs>
+</svg>

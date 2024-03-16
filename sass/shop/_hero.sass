@@ -1,0 +1,151 @@
+@import '../cta/_cta'
+.hero
+    margin-top: 8.9rem
+    .hero__content
+        .hero__title
+            font-weight: bold
+        .hero__wrapper
+            display: grid
+            grid-template-columns: 1fr 1fr
+            height: 110rem
+            .hero__right
+                margin-top: 6rem
+                margin-left: 12rem
+                .right-title
+                    font-size: 2.5rem
+                    font-weight: 600
+                    letter-spacing: $spacing
+
+                    margin-bottom: 3rem
+                .right-block
+                    a
+                        color: $clr-black
+                        @include flex-row-center-space-between()
+
+                        border-bottom: 0.1rem solid $clr-grey-3
+
+                        margin-bottom: 3rem
+                        .left
+                            h2
+                                font-size: 2rem
+                            p
+                                color: $clr-header
+                                font-size: 1.2rem
+
+                                display: flex
+                                gap: 1.2rem
+                                span
+                                    text-decoration-line: line-through
+                        .right
+                            img
+                                width: 4rem
+                                height: 4rem
+            .hero__grid
+                margin-top: 5rem
+
+                display: grid
+                grid-template-columns: repeat(4, 19.5rem)
+                grid-template-rows: repeat(4, 32.2rem)
+                gap: 2rem
+                .hero__element
+                    color: $clr-black
+
+                    transition: $transition
+                    border-radius: $radius
+                    padding: 1rem
+                    &:hover
+                        box-shadow: $shadow
+
+                        transform: scale(1.01)
+                    .grid-card
+                        display: flex
+                        flex-direction: column
+                        h2
+                            margin-top: 0.5rem
+
+                            font-size: 1.6rem
+                            font-weight: 500
+
+                            max-width: 25rem
+                        h3
+                            color: $clr-header
+                            font-size: 2.4rem
+                            font-weight: 600
+
+                            margin-top: 2rem
+                        h4
+                            margin-top: 0.5rem
+
+                            color: $clr-grey-2
+                            font-size: 1.2rem
+                            font-weight: 500
+                            text-decoration-line: line-through
+                        img
+                            width: 80%
+                            height: 14rem
+
+                            object-fit: cover
+.overlay
+    display: none
+
+    position: fixed
+    z-index: 99
+    top: 50%
+    left: 50%
+
+    width: 20rem
+    height: 20rem
+
+    transform: translate(-50%, -50%)
+
+    background-color: rgba(0,0,0,0.5)
+    color: white
+
+    text-align: center
+
+    font-size: 3rem
+    
+    padding-top: 7rem
+
+    border-radius: $radius
+
+//media
+@media screen and ( max-width: 1024px )
+    .hero
+        .hero__content
+            .hero__wrapper
+                display: flex
+                flex-direction: row-reverse
+                .hero__grid
+                    grid-template-columns: repeat(3, 16.5rem)
+                .hero__right
+                    margin-left: 0
+                    margin-right: 5rem
+@media screen and ( max-width: 768px )
+    .hero
+        .hero__content
+            .hero__wrapper
+                .hero__grid
+                    grid-template-columns: repeat(3, 15rem)
+                .hero__right
+                    a
+                        .left
+                            h2
+                                font-size: 1.5rem !important
+                        .right
+                            img
+                                object-fit: cover
+                                margin-left: 2rem
+@media screen and ( max-width: 425px )
+    .hero
+        .hero__content
+            .hero__wrapper
+                .hero__grid
+                    grid-template-columns: 18rem
+                    margin-left: auto
+                    margin-right: auto
+                    img
+                        margin-left: auto
+                        margin-right: auto
+                .hero__right
+                    display: none
